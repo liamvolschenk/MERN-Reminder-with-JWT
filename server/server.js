@@ -10,14 +10,6 @@ const app = express();
 //setting the port
 const PORT = process.env.PORT || 3001;
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'client/build')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname,
-            'client', 'build', 'index.html'));
-    });
-}
-
 // express middleware
 app.use(express.json());
 app.use(express.urlencoded({
