@@ -13,6 +13,12 @@
 
 This a full-stack web application that makes use of the MERN stack and JWT for user authorization. A user is able to sign up and login to their profile and save a list of reminders, as well as update or delete their reminders. The user info as well as the reminder data is stored using MongoDB Atlas. 
 
+## Usage
+
+If you are an end user and would like to view and use the application, please check out the following link:
+<a target="_blank" href="#"></a>
+
+If you would like to view and play with the source code please follow the instillation proccess below:
 
 ## Installation
 To run this code:
