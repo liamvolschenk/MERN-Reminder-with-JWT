@@ -15,6 +15,8 @@ This a full-stack web application that makes use of the MERN stack and JWT for u
 
 ## Usage
 
+This app makes use of JWT for user authorization, once you have installed and opened the app, enter a username and password of your choice. You will then have your own profile where you can add, edit and delete reminders.
+
 If you would like to view and play with the source code please follow the instillation proccess below:
 
 ## Installation
