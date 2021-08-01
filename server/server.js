@@ -19,10 +19,14 @@ app.use(express.urlencoded({
 // use the routes that were imported
 app.use(routes);
 
-// If we're in production, serve client/build as static assets
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/build')));
-};
+//serve client/build as static assets
+const root = require('path').join(__dirname, 'client', 'build')
+app.use(express.static(root));
+app.get("*", (req, res) => {
+    res.sendFile('index.html', {
+        root
+    });
+})
 
 db.once('open', () => {
     app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}!`));
