@@ -15,9 +15,6 @@ This a full-stack web application that makes use of the MERN stack and JWT for u
 
 ## Usage
 
-If you are an end user and would like to view and use the application, please check out the following link:
-<a target="_blank" href="#"></a>
-
 If you would like to view and play with the source code please follow the instillation proccess below:
 
 ## Installation
